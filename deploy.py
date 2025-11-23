@@ -87,4 +87,4 @@ ejecutar_comando_seguro(
 # Paso 3: Build (Solo se ejecuta si los pasos 1 y 2 tuvieron éxito)
 ejecutar_comando_seguro(
     ["packer", "build", "google.pkr.hcl"],
-    "Imagen en AMAZON construida con éxito."
+    "Imagen en GOOGLE construida con éxito."
