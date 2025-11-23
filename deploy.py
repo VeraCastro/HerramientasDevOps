@@ -22,7 +22,7 @@ def ejecutar_comando_seguro(comando_lista, mensaje_exito):
         # stdout=None y stderr=None hacen que la salida se muestre directamente en la terminal.
         proceso = subprocess.Popen(comando_lista, stdout=None, stderr=None)
 
-        # 2. ¡ESTA ES LA CLAVE!
+        # 2.Bloqueo de proceso
         # Esperamos indefinidamente hasta que este comando termine.
         # Bloquea el script de Python aquí hasta que Packer finalice esta tarea.
         codigo_salida = proceso.wait()
